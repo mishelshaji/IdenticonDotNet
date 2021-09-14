@@ -4,4 +4,4 @@
  For more information, please check this post.
  https://www.geekinsta.com/how-to-create-identicon-in-net-core/
 
-![](./screenshot.png)
+![](./screenshot.jpg)
