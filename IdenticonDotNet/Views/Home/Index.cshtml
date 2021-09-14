@@ -1,8 +1,28 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var text1 = "Mishel";
+    var text2 = "Geekinsta";
+    var timeStr = DateTime.Now.ToString();
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <figure>
+            <img identicon-value="text1" height="200" />
+            <figcaption>Identicon of Mishel</figcaption>
+        </figure>
+        <figure>
+            @Html.Identicon(text2, 200)
+            <figcaption>Identicon of Geekinsta (Method 2)</figcaption>
+        </figure>
+        <figure>
+            <img identicon-value="timeStr" height="200" />
+            <figcaption>Random Identicon based on Time</figcaption>
+        </figure>
+    </div>
 </div>

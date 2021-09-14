@@ -1,4 +1,5 @@
 using IdenticonDotNet.Data;
+using Jdenticon.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -53,6 +54,7 @@ namespace IdenticonDotNet
             }
             app.UseHttpsRedirection();
 
+            app.UseJdenticon();
             app.UseStaticFiles();
 
             app.UseRouting();
